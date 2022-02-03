@@ -18,8 +18,8 @@
 					margin: 0 auto;
 					border: 4px solid black;
 					width: 100% !important;
-					max-width: 400px;
-					/* height: 85% !important; */
+					/* max-width: 400px;  */
+					height: 85% !important;
 				}
 				span {
 					display: block;
@@ -43,8 +43,8 @@ var game = new Phaser.Game(400, 625, Phaser.CANVAS, '', { preload: preload, crea
 
 function preload() {
 
-    game.load.image('ball', 'assets/images/ball.png');
-    game.load.image('hoop', 'assets/images/hoop.png');
+		game.load.image('ball', 'assets/images/ball.png');
+		game.load.image('hoop', 'assets/images/hoop.png');
 		game.load.image('side rim', 'assets/images/side_rim.png');
 		game.load.image('front rim', 'assets/images/front_rim.png');
 
@@ -99,8 +99,8 @@ function create() {
 
 	game.physics.p2.setImpactEvents(true);
 
-  game.physics.p2.restitution = 0.63;
-  game.physics.p2.gravity.y = 0;
+	game.physics.p2.restitution = 0.63;
+	game.physics.p2.gravity.y = 0;
 
 	collisionGroup = game.physics.p2.createCollisionGroup();
 
