@@ -11,12 +11,13 @@
 			padding: 0 3vw;
 			box-sizing: border-box;
 			width: 100%;
+			background-color: #009aff;
 			
         }
 				canvas {
 					padding: 0%;
 					margin: 0 auto;
-					border: 2px solid black;
+					border: 2px solid rgb(173, 173, 173);
 				}
 				span {
 					display: block;
@@ -246,7 +247,7 @@ function createBall() {
 		game.add.tween(ball.scale).from({x : 0.7, y : 0.7}, 100, Phaser.Easing.Linear.None, true, 0, 0, false);
 		game.physics.p2.enable(ball, false);
 		ball.body.setCircle(60); // NOTE: Goes from 60 to 36
-		ball.launched = false;
+		ball.launched = false;https://mateusmarqs.github.io/teste-front-game/
 		ball.isBelowHoop = false;
 	}
 }
